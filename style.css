@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  text-align: center;
+  background-color: #212121;
+  color: #ffffff;
+  padding: 10px; /* Added padding for mobile */
+}
+
+.container {
+  margin-top: 50px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#quote-container {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 500px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+#quote-container:hover {
+  transform: translateY(-5px);
+}
+
+#quote-text {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  animation: fadeInOut 0.5s ease-in-out;
+}
+
+#quote-author {
+  color: #aaa;
+  font-size: 16px;
+}
+
+#buttons-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Added flex-wrap for mobile */
+  gap: 10px; /* Added gap for mobile */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: #4d4d4d;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333333;
+}
+
+#favorites-container {
+  margin-top: 50px;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#favorites-list {
+  list-style: none;
+  padding: 0;
+}
+
+.favorite-quote {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.favorite-quote:hover {
+  transform: translateY(-5px);
+}
+
+.favorite-quote .quote-text {
+  flex: 1;
+  font-size: 16px;
+}
+
+.favorite-quote .quote-author {
+  flex: 1;
+  color: #aaa;
+  font-size: 14px;
+  text-align: right;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+/* Mobil cihazlar için stil düzenlemeleri */
+@media (max-width: 600px) {
+    h1 {
+      font-size: 22px;
+    }
+    
+    #quote-container {
+      margin: 30px auto;
+      padding: 15px;
+      max-width: 400px;
+    }
+    
+    #quote-text {
+      font-size: 20px;
+    }
+    
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+    
+    h2 {
+      font-size: 20px;
+    }
+    
+    .favorite-quote .quote-text {
+      font-size: 14px;
+    }
+    
+    .favorite-quote .quote-author {
+      font-size: 12px;
+    }
+  }
+  
